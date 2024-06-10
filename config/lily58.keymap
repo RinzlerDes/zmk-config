@@ -22,11 +22,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                       &kp N6           &kp N7        &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp Y   &kp L   &kp G     &kp P     &kp K                                        &kp J            &kp F         &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp C   &kp R   &kp S     &kp T     &kp M                                        &kp B            &kp N         &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC  &kp V   &kp Q   &kp W     &kp D     &kp Z         &kp K_PLAY_PAUSE    &kp RBKT     &kp X            &kp H         &kp SQT   &kp FSLH  &kp DOT    &kp ESC
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB       &lt 1 SPACE         &mt RSHIFT RET  &lt 2 BSPC  &kp LCTRL     &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&kp TAB    &kp Y   &kp L   &kp G     &kp P     &kp K                                              &kp J       &kp F      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp C   &kp R   &kp S     &kp T     &kp M                                              &kp B       &kp N      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp V   &kp Q   &kp W     &kp D     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp ESC
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 1 SPACE         &mt RSHIFT RET  &lt 2 BSPC  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -42,7 +42,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans      &trans       &trans         &trans       &trans      &trans
-&trans      &trans            &trans             &kp CARET          &kp DOLLAR    &trans                          &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
+&trans      &kp K_UNDO        &kp K_CUT          &kp K_COPY         &kp K_PASTE   &kp K_REDO                      &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
 &trans      &kp F4            &kp F3             &kp F2             &kp F1        &kp F5                          &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
 &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
                                                  &trans             &trans        &trans        &trans    &trans  &trans      &trans       &trans
@@ -60,11 +60,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans       &trans    &trans    &trans     &trans                           &trans     &trans  &trans  &trans  &trans     &trans
-&trans  &kp PERCENT  &kp LBKT  &kp RBKT  &kp PLUS   &kp AT                           &kp TILDE  &kp N4  &kp N5  &kp N6  &kp HASH   &trans
-&trans  &kp AMPS     &kp LPAR  &kp RPAR  &kp EQUAL  &kp ASTRK                        &kp EXCL   &kp N1  &kp N2  &kp N3  &kp COLON  &trans
-&trans  &kp PIPE     &kp LBRC  &kp RBRC  &kp MINUS  &kp BACKSLASH  &trans    &trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp CARET  &trans
-                               &trans    &trans     &trans         &kp N0    &trans  &trans     &trans  &trans
+&trans  &trans       &trans    &trans    &trans     &trans                        &trans     &trans  &trans  &trans  &trans     &trans
+&trans  &kp PERCENT  &kp LBKT  &kp RBKT  &kp PLUS   &kp AT                        &kp TILDE  &kp N4  &kp N5  &kp N6  &kp HASH   &kp BACKSLASH
+&trans  &kp AMPS     &kp LPAR  &kp RPAR  &kp EQUAL  &kp ASTRK                     &kp EXCL   &kp N1  &kp N2  &kp N3  &kp COLON  &trans
+&trans  &kp PIPE     &kp LBRC  &kp RBRC  &kp MINUS  &kp DOLLAR  &trans    &trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp CARET  &trans
+                               &trans    &trans     &trans      &kp N0    &trans  &trans     &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
