@@ -22,14 +22,28 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp Y   &kp L   &kp G     &kp P     &kp K                                              &kp J       &kp F      &kp O     &kp U     &kp COMMA  &kp UNDER
-&kp UNDER  &kp C   &kp R   &kp S     &kp T     &kp M                                              &kp B       &kp N      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp V   &kp Q   &kp W     &kp D     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp ESC
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 1 SPACE         &mt RSHIFT RET  &lt 2 BSPC  &kp LCTRL  &kp RGUI
+&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&kp TAB     &kp Y   &kp L   &kp G     &kp P     &kp K                                              &kp J       &kp F      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER   &kp C   &kp R   &kp S     &kp T     &kp M                                              &kp B       &kp N      &kp A     &kp E     &kp I      &kp SEMI
+&kp LSHIFT  &kp V   &kp Q   &kp W     &kp D     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp ESC
+                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 2 SPACE         &mt RSHIFT RET  &lt 3 BSPC  &kp LCTRL  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+        };
+
+        layer_3 {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                                &kp N6           &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&trans     &kp B   &kp L   &kp D         &kp C         &kp V                                                 &kp J            &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp N   &kp R   &kp T         &kp S         &kp G                                                 &kp P            &kp H      &kp A     &kp E     &kp I      &kp SEMI
+&kp LSHFT  &kp Q   &kp X   &kp M         &kp W         &kp Z          &kp K_PLAY_PAUSE    &kp RIGHT_BRACKET  &kp K            &kp F      &kp APOS  &kp FSLH  &kp DOT    &kp ESC
+                           &kp LEFT_ALT  &kp LEFT_GUI  &mt LCTRL TAB  &lt 2 SPACE         &mt LSHIFT ENTER   &lt 3 BACKSPACE  &kp LCTRL  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -41,7 +55,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &trans      &trans       &trans         &trans       &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &tog 1      &trans       &trans         &trans       &trans      &trans
 &trans      &kp K_UNDO        &kp K_CUT          &kp K_COPY         &kp K_PASTE   &kp K_REDO                      &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
 &trans      &kp F4            &kp F3             &kp F2             &kp F1        &kp F5                          &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
 &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
