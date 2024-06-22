@@ -37,9 +37,9 @@
         layer_3 {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                                &kp N6           &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&trans     &kp B   &kp L   &kp D         &kp C         &kp V                                                 &kp J            &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
+&trans     &kp B   &kp L   &kp D         &kp C         &kp V                                                 &kp K            &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
 &kp UNDER  &kp N   &kp R   &kp T         &kp S         &kp G                                                 &kp P            &kp H      &kp A     &kp E     &kp I      &kp SEMI
-&kp LSHFT  &kp Q   &kp X   &kp M         &kp W         &kp Z          &kp K_PLAY_PAUSE    &kp RIGHT_BRACKET  &kp K            &kp F      &kp APOS  &kp FSLH  &kp DOT    &kp ESC
+&kp LSHFT  &kp Q   &kp X   &kp M         &kp W         &kp Z          &kp K_PLAY_PAUSE    &kp RIGHT_BRACKET  &kp J            &kp F      &kp APOS  &kp FSLH  &kp DOT    &kp ESC
                            &kp LEFT_ALT  &kp LEFT_GUI  &mt LCTRL TAB  &lt 2 SPACE         &mt LSHIFT ENTER   &lt 3 BACKSPACE  &kp LCTRL  &trans
             >;
 
