@@ -62,10 +62,10 @@
 
         layer_5 {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8     &kp N9     &kp N0   &kp DEL
-&kp TAB     &kp Y   &kp L   &kp F     &kp M     &kp K                                              &kp J       &kp B      &kp O      &kp U      &kp SQT  &kp MINUS
-&kp UNDER   &kp C   &kp R   &kp S     &kp T     &kp G                                              &kp P       &kp N      &kp E      &kp I      &kp A    &kp SEMI
-&kp LSHIFT  &kp V   &kp X   &kp W     &kp D     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SLASH  &kp COMMA  &kp DOT  &kp ESC
+&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&kp TAB     &kp Y   &kp L   &kp F     &kp D     &kp K                                              &kp J       &kp B      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER   &kp C   &kp R   &kp S     &kp T     &kp G                                              &kp P       &kp N      &kp A     &kp E     &kp I      &kp SEMI
+&kp LSHIFT  &kp W   &kp X   &kp V     &kp M     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp ESC
                             &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RSHIFT RET  &lt 5 BSPC  &kp LCTRL  &kp RGUI
             >;
 
