@@ -34,12 +34,12 @@
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
 &kp TAB    &kp B   &kp F   &kp M     &kp G     &kp P                                              &kp Z       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp N   &kp S   &kp T     &kp D     &kp Y                                              &kp J       &kp H      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp Q   &kp V   &kp K     &kp C     &kp W          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp R      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+&kp UNDER  &kp N   &kp S   &kp T     &kp D     &kp Y                                              &kp J       &kp R      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp Q   &kp V   &kp K     &kp C     &kp W          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 3 SPACE         &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp RGUI
             >;
 
@@ -48,12 +48,12 @@
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp B   &kp F   &kp M     &kp G     &kp P                                              &kp Z       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp N   &kp S   &kp T     &kp D     &kp Y                                              &kp J       &kp R      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp Q   &kp V   &kp K     &kp C     &kp W          &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+&kp TAB    &kp W   &kp F   &kp H     &kp G     &kp K                                              &kp Z       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp C   &kp S   &kp N     &kp T     &kp P                                              &kp J       &kp R      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp B   &kp V   &kp M     &kp D     &kp Y          &kp K_PLAY_PAUSE    &kp RBKT        &kp Q       &kp X      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 3 SPACE         &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp RGUI
             >;
 
