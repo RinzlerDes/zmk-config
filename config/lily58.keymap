@@ -19,7 +19,7 @@
 &kp TAB    &kp B   &kp F   &kp M     &kp G     &kp P                                              &kp J       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
 &kp UNDER  &kp N   &kp S   &kp T     &kp D     &kp Y                                              &kp X       &kp R      &kp A     &kp E     &kp I      &kp SEMI
 &kp ESC    &kp Q   &kp V   &kp K     &kp C     &kp W          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RSHIFT RET  &lt 5 BSPC  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings =
@@ -33,7 +33,7 @@
 &kp TAB    &kp B   &kp F   &kp M     &kp G     &kp W                                              &kp J       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
 &kp UNDER  &kp N   &kp S   &kp T     &kp D     &kp Y                                              &kp X       &kp R      &kp A     &kp E     &kp I      &kp SEMI
 &kp ESC    &kp Q   &kp V   &kp K     &kp C     &kp P          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RSHIFT RET  &lt 5 BSPC  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings =
@@ -47,7 +47,7 @@
 &kp TAB    &kp F   &kp C   &kp H     &kp G     &kp K                                              &kp J       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
 &kp UNDER  &kp S   &kp D   &kp N     &kp T     &kp Y                                              &kp X       &kp R      &kp A     &kp E     &kp I      &kp SEMI
 &kp ESC    &kp V   &kp P   &kp B     &kp M     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp W      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RSHIFT RET  &lt 5 BSPC  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings =
@@ -55,41 +55,13 @@
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        yesil {
+        layer_5wl {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp F   &kp P   &kp D     &kp M     &kp Q                                              &kp J       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp S   &kp C   &kp T     &kp N     &kp Y                                              &kp W       &kp R      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp V   &kp G   &kp B     &kp H     &kp K          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp X      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
-        };
-
-        sntm {
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp F   &kp P   &kp M     &kp G     &kp W                                              &kp J       &kp L      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp S   &kp N   &kp T     &kp D     &kp Y                                              &kp X       &kp R      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp V   &kp B   &kp K     &kp C     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
-        };
-
-        cmod4 {
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp Y   &kp L   &kp F     &kp D     &kp K                                              &kp J       &kp P      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp C   &kp R   &kp S     &kp T     &kp G                                              &kp B       &kp N      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp W   &kp X   &kp V     &kp M     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 6 SPACE         &mt RSHIFT RET  &lt 7 BSPC  &kp LCTRL  &kp RGUI
+&kp TAB    &kp F   &kp C   &kp H     &kp G     &kp K                                              &kp J       &kp W      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp S   &kp D   &kp N     &kp T     &kp Y                                              &kp X       &kp R      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp V   &kp P   &kp B     &kp M     &kp Q          &kp K_PLAY_PAUSE    &kp RBKT        &kp Z       &kp L      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RSHIFT RET  &lt 5 BSPC  &kp LCTRL  &kp RGUI
             >;
 
             sensor-bindings =
@@ -106,7 +78,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &tog 1      &tog 2       &tog 3         &tog 4       &tog 5      &trans
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &tog 1      &tog 2       &tog 3         &tog 0       &tog 0      &trans
 &trans      &kp K_UNDO        &kp K_CUT          &kp K_COPY         &kp K_PASTE   &kp K_REDO                      &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
 &trans      &kp F4            &kp F3             &kp F2             &kp F1        &kp F5                          &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
 &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
