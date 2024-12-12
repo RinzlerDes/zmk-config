@@ -21,8 +21,6 @@
 &kp ESC    &kp Q   &kp X   &kp M     &kp W     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT        &kp K       &kp F      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 3 SPACE         &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp LWIN
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         Qwerty {
@@ -34,9 +32,6 @@
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 3 SPACE         &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp LWIN
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         gaming {
@@ -48,9 +43,6 @@
                               &kp M   &kp L   &kp B   &kp SPACE           &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
