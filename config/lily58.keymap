@@ -21,9 +21,7 @@
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 3 SPACE         &mt RSHIFT RET  &lt 4 BSPC  &kp LCTRL  &kp LWIN
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         Qwerty {
