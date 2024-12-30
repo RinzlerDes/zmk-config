@@ -14,11 +14,11 @@
 
         Gallium {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                        &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB         &kp B   &kp L   &kp D     &kp C     &kp V                                         &kp J       &kp Y      &kp O     &kp U     &kp COMMA  &kp SEMICOLON
-&kp LEFT_SHIFT  &kp N   &kp R   &kp T     &kp S     &kp G                                         &kp P       &kp H      &kp A     &kp E     &kp I      &kp RSHIFT
-&kp ESC         &kp Q   &kp X   &kp M     &kp W     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT   &kp K       &kp F      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                                &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &kp ENTER  &lt 5 BSPC  &kp LCTRL  &kp LWIN
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                    &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&kp TAB    &kp B   &kp L   &kp D     &kp C     &kp V                                                     &kp J       &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp N   &kp R   &kp T     &kp S     &kp G                                                     &kp P       &kp H      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp Q   &kp X   &kp M     &kp W     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT               &kp K       &kp F      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RIGHT_SHIFT ENTER  &lt 5 BSPC  &kp LCTRL  &kp LWIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
