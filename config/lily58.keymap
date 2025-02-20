@@ -12,6 +12,18 @@
     keymap {
         compatible = "zmk,keymap";
 
+        Flash {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                    &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
+&kp TAB    &kp B   &kp L   &kp C     &kp M     &kp K                                                     &kp J       &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
+&kp UNDER  &kp N   &kp R   &kp S     &kp T     &kp G                                                     &kp P       &kp H      &kp A     &kp E     &kp I      &kp SEMI
+&kp ESC    &kp Q   &kp X   &kp V     &kp W     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT               &kp F       &kp D      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RIGHT_SHIFT ENTER  &lt 5 BSPC  &kp LCTRL  &kp LWIN
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
         Gallium {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                    &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
@@ -38,7 +50,7 @@
 
         gaming {
             bindings = <
-&kp ESC   &kp N1      &kp N2  &kp N3  &kp N4  &kp N5                                      &to 0       &to 0      &tog 2    &kp N9    &kp N0    &lt 0 DEL
+&kp ESC   &kp N1      &kp N2  &kp N3  &kp N4  &kp N5                                      &to 1       &to 1      &tog 3    &kp N9    &kp N0    &lt 1 DEL
 &kp TAB   &kp I       &kp Q   &kp W   &kp E   &kp R                                       &kp Y       &kp U      &kp I     &kp O     &kp P     &kp MINUS
 &kp G     &kp LSHIFT  &kp A   &kp S   &kp D   &kp F                                       &kp H       &kp J      &kp K     &kp L     &kp SEMI  &kp SQT
 &kp LALT  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V   &kp K_PLAY_PAUSE    &kp RBKT        &kp X       &kp L      &kp SQT   &kp FSLH  &kp DOT   &kp LSHIFT
@@ -46,18 +58,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-        };
-
-        canary {
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                    &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
-&kp TAB    &kp W   &kp L   &kp Y     &kp P     &kp B                                                     &kp Z       &kp F      &kp O     &kp U     &kp COMMA  &kp MINUS
-&kp UNDER  &kp C   &kp R   &kp S     &kp T     &kp G                                                     &kp M       &kp N      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp Q   &kp J   &kp V     &kp D     &kp K          &kp K_PLAY_PAUSE    &kp RBKT               &kp X       &kp H      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
-                           &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RIGHT_SHIFT ENTER  &lt 5 BSPC  &kp LCTRL  &kp LWIN
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
@@ -69,7 +69,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                     &trans      &tog 1       &tog 2         &tog 3       &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                     &tog 1      &tog 2       &tog 3         &trans       &trans      &trans
 &trans      &kp K_UNDO         &kp K_CUT        &kp K_COPY    &kp K_PASTE   &kp K_REDO                       &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
 &trans      &kp F4             &kp F3           &kp F2        &kp F1        &kp F5                           &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
 &soft_off   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREV    &kp C_NEXT    &kp C_AC_COPY  &trans    &trans  &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
