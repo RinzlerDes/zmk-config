@@ -17,7 +17,7 @@
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                    &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp DEL
 &kp TAB    &kp B   &kp L   &kp C     &kp M     &kp K                                                     &kp J       &kp Y      &kp O     &kp U     &kp COMMA  &kp MINUS
 &kp UNDER  &kp N   &kp R   &kp S     &kp T     &kp G                                                     &kp P       &kp H      &kp A     &kp E     &kp I      &kp SEMI
-&kp ESC    &kp Q   &kp X   &kp V     &kp W     &kp Z          &kp K_PLAY_PAUSE    &kp RBKT               &kp F       &kp D      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
+&kp ESC    &kp Q   &kp X   &kp Z     &kp W     &kp V          &kp K_PLAY_PAUSE    &kp RBKT               &kp F       &kp D      &kp SQT   &kp FSLH  &kp DOT    &kp LSHIFT
                            &kp LALT  &kp LGUI  &mt LCTRL TAB  &lt 4 SPACE         &mt RIGHT_SHIFT ENTER  &lt 5 BSPC  &kp LCTRL  &kp LWIN
             >;
 
